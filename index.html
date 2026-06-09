@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML 1.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+        .tag-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .tag-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tag-card.obsolete {
+            background: #ffe6e6;
+            border-left: 4px solid #e74c3c;
+        }
+        .attribute {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #27ae60;
+            margin: 5px 0;
+            padding: 3px 6px;
+            background: #f0f9f4;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .attribute.obsolete {
+            color: #2980b9;
+            background: #e3f2fd;
+        }
+        .tag-name {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .tag-description {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .obsolete-badge {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        .legend {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .info-box {
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+         .atributo {
+           font-size: 0.7em;
+           margin-top: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>📋 Etiquetas HTML 1.0 (1991-1993)</h1>
+    
+    <div class="legend">
+        <strong>Leyenda:</strong> Etiquetas con fondo rojo están <span class="obsolete-badge">OBSOLETAS</span> | Atributos en <span class="attribute obsolete">azul</span> están obsoletos
+    </div>
+
+    <div class="tag-grid">
+        <div class="tag-card">
+            <div class="tag-name">&lt;html&gt;</div>
+            <div class="tag-description">Elemento raíz del documento HTML</div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;head&gt;</div>
+            <div class="tag-description">Contiene metadatos e información del documento</div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;title&gt;</div>
+            <div class="tag-description">Define el título del documento que aparece en la pestaña del navegador</div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;body&gt;</div>
+            <div class="tag-description">Contiene todo el contenido visible del documento</div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;h1&gt; - &lt;h6&gt;</div>
+            <div class="tag-description">Encabezados de seis niveles diferentes, siendo h1 el más importante</div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;p&gt;</div>
+            <div class="tag-description">Define un párrafo de texto</div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;a&gt;</div>
+            <div class="tag-description">Crea enlaces o hipervínculos a otras páginas o recursos</div>
+            <div style="margin-top: 8px;">
+                <span class="attribute">href</span>
+                <span class="attribute">name</span>
+                <span class="attribute">title</span>
+            </div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;ul&gt;</div>
+            <div class="tag-description">Lista desordenada (con viñetas)</div>
+            <div style="margin-top: 8px;">
+                <span class="attribute obsolete">compact</span> <span class="atributo">Especifica que la lista debe mostrarse más pequeña de lo normal.</span>
+            </div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;ol&gt;</div>
+            <div class="tag-description">Lista ordenada (numerada)</div>
+            <div style="margin-top: 8px;">
+                <span class="attribute obsolete">compact</span> <span class="atributo">Especifica que la lista debe mostrarse más pequeña de lo normal.</span>
+            </div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;li&gt;</div>
+            <div class="tag-description">Elemento individual de una lista</div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;dl&gt;</div>
+            <div class="tag-description">Lista de definiciones (glosario)</div>
+            <div style="margin-top: 8px;">
+                <span class="attribute obsolete">compact</span> <span class="atributo">Especifica que la lista debe mostrarse más pequeña de lo normal.</span> 
+            </div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;dt&gt;</div>
+            <div class="tag-description">Término que se va a definir en una lista de definiciones</div>
+        </div>
+        
+        <div class="tag-card">
+            <div class="tag-name">&lt;dd&gt;</div>
+            <div class="tag-description">Descripción o definición del término en una lista de definiciones</div>
+        </div>
+        
+        <div class="tag-card obsolete">
+            <div class="tag-name">&lt;nextid&gt;<span class="obsolete-badge">OBSOLETA</span></div>
+            <div class="tag-description">Generaba identificadores únicos. Nunca se implementó correctamente y desapareció rápidamente</div>
+            <div style="margin-top: 8px;">
+                <span class="attribute obsolete">n</span> <span class="atributo">La N es el número de identificadores únicos.</span>
+            </div>
+        </div>
+                <div class="tag-card obsolete">
+            <div class="tag-name">&lt;listing&gt;<span class="obsolete-badge">OBSOLETA</span></div>
+            <div class="tag-description">Texto preformateado. Representa el texto sin formato, no hay etiqueta de cierre | Ancho a 132 caracteres. </div>
+            <div style="margin-top: 8px;">
+                <span class="attribute obsolete">compact</span> <span class="atributo">Menos espacio y más junto, booleano.</span>          
+                </div>
+            
+        </div>
+                <div class="tag-card obsolete">
+            <div class="tag-name">&lt;plaintext&gt;<span class="obsolete-badge">OBSOLETA</span></div>
+            <div class="tag-description">Todo el contenido después de la etiqueta se convertía en texto plano, sin cierre.</div>
+            <div style="margin-top: 8px;"></div>
+        </div>
+                <div class="tag-card obsolete">
+            <div class="tag-name">&lt;xmp&gt;<span class="obsolete-badge">OBSOLETA</span></div>
+            <div class="tag-description">Texto preformateado. Usado para marcar texto</div>
+            <div style="margin-top: 8px;">
+            </div>
+        </div>
+                <div class="tag-card obsolete">
+            <div class="tag-name">&lt;base&gt;<span class="obsolete-badge">OBSOLETA</span></div>
+            <div class="tag-description">Define la URL base para que todas las rutas relativas del documento partan de ella. Debe tener href o target (o ambos). Solo puede existir una etiqueta <base> y debe colocarse dentro de <head>.
+			</div>
+            <div style="margin-top: 8px;">
+                <span class="attribute">href</span>
+                <span class="attribute">target</span>
+            </div>
+        </div>
+                <div class="tag-card obsolete">
+            <div class="tag-name">&lt;address&gt;<span class="obsolete-badge">OBSOLETA</span></div>
+            <div class="tag-description">Intentaba generar identificadores únicos automáticamente. Nunca se implementó correctamente y desapareció rápidamente</div>
+            <div style="margin-top: 8px;">
+                <span class="attribute obsolete">n</span>
+            </div>
+        </div>
+                <div class="tag-card obsolete">
+            <div class="tag-name">&lt;nextid&gt;<span class="obsolete-badge">OBSOLETA</span></div>
+            <div class="tag-description">Intentaba generar identificadores únicos automáticamente. Nunca se implementó correctamente y desapareció rápidamente</div>
+            <div style="margin-top: 8px;">
+                <span class="attribute obsolete">n</span>
+            </div>
+    		</div>
+
+    <div class="info-box">
+        <h3>📝 Información sobre HTML 1.0:</h3>
+        <ul>
+            <li><strong>Año:</strong> 1991-1993</li>
+            <li><strong>Creador:</strong> Tim Berners-Lee en el CERN</li>
+            <li><strong>Características:</strong> Versión muy básica con solo 18 etiquetas</li>
+            <li><strong>Propósito:</strong> Compartir documentos científicos de forma simple</li>
+            <li><strong>Etiqueta obsoleta:</strong> Solo &lt;nextid&gt; está obsoleta</li>
+            <li><strong>Atributos obsoletos:</strong> "compact" (usado en listas) y "n" (usado en nextid)</li>
+        </ul>
+        
+        <h3>🎯 Nota importante:</h3>
+        <p>HTML 1.0 nunca fue un estándar oficial. Fue la implementación original de Tim Berners-Lee. El primer estándar oficial fue HTML 2.0 en 1995.</p>
+        
+        <h3>📋 Sobre los atributos:</h3>
+        <p><strong>Atributos vigentes:</strong></p>
+        <ul>
+            <li><strong>href</strong> - Define el destino del enlace</li>
+            <li><strong>name</strong> - Crea un ancla dentro del documento</li>
+            <li><strong>title</strong> - Proporciona información adicional (tooltip)</li>
+        </ul>
+        <p><strong>Atributos obsoletos (en azul):</strong></p>
+        <ul>
+            <li><strong>compact</strong> - Intentaba reducir el espaciado en listas. Obsoleto en HTML5, usar CSS</li>
+            <li><strong>n</strong> - Usado en la etiqueta nextid para definir el siguiente ID. Obsoleto completamente</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
